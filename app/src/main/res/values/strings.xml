@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Through Tix</string>
+    <string-array name="event_types_array">
+        <item>Comedy Shows</item>
+        <item>Plays</item>
+        <item>Movies</item>
+    </string-array>
 </resources>
