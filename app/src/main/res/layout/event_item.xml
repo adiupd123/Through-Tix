@@ -1,52 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
-    android:layout_margin="8dp">
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/event1_imageView"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/event_poster"
-        app:shapeAppearance="@style/roundedCorners" />
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:background="@color/black"
-        android:layout_alignParentBottom="true">
+        android:layout_height="250dp"
+        android:padding="8dp">
 
-        <TextView
-            android:id="@+id/event1Title_textView"
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/event_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/event_poster"
+            app:shapeAppearance="@style/roundedCorners" />
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Boku no Hero Academia Season 6"
-            android:textSize="22sp"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:padding="10dp"
+            android:background="@drawable/relativelayout_style"
+            android:layout_alignParentBottom="true">
 
-        <TextView
-            android:id="@+id/event1Type_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Action"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textColor="@color/white"
-            android:layout_below="@id/event1Title_textView" />
+            <TextView
+                android:id="@+id/eventTitle_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boku no Hero Academia Season 6"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
-        <TextView
-            android:id="@+id/event1Rating_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rating: 4.4"
-            android:textColor="@color/white"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:layout_alignParentRight="true"
-            android:layout_alignBaseline="@id/event1Type_textView"/>
+            <TextView
+                android:id="@+id/eventType_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/white"
+                android:layout_below="@id/eventTitle_textView" />
+
+            <TextView
+                android:id="@+id/eventRating_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: 4.4"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/eventType_textView"/>
+        </RelativeLayout>
     </RelativeLayout>
-</RelativeLayout>
+</androidx.cardview.widget.CardView>
