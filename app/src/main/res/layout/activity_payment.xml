@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/totalAmt_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: 150.00"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/ques_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Do you want to confirm payment?"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/totalAmt_textView" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/green_700"
+        android:ems="20"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ques_textView"
+        app:layout_constraintStart_toStartOf="@+id/ques_textView"
+        app:layout_constraintTop_toBottomOf="@+id/ques_textView" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/red"
+        android:ems="20"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ques_textView"
+        app:layout_constraintStart_toStartOf="@+id/ques_textView"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

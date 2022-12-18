@@ -12,8 +12,8 @@
 
     <TextView
         android:id="@+id/column_text_1"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:layout_weight="1"
@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/column_text_2"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:layout_weight="1"
@@ -36,8 +36,8 @@
 
     <TextView
         android:id="@+id/column_text_3"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:layout_weight="1"
@@ -48,8 +48,8 @@
 
     <TextView
         android:id="@+id/column_text_4"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:layout_weight="1"
@@ -59,9 +59,9 @@
         android:text="@string/space" />
     <TextView
         android:id="@+id/column_text_5"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:layout_weight="1"
         android:background="@drawable/button_outline"
@@ -70,8 +70,8 @@
         android:text="@string/space" />
     <TextView
         android:id="@+id/column_text_6"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:layout_weight="1"
@@ -81,8 +81,8 @@
         android:text="@string/space" />
     <TextView
         android:id="@+id/column_text_7"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:layout_weight="1"
@@ -92,8 +92,85 @@
         android:text="@string/space" />
     <TextView
         android:id="@+id/column_text_8"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_outline"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/space" />
+    <TextView
+        android:id="@+id/column_text_9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_outline"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/space" />
+    <TextView
+        android:id="@+id/column_text_10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_outline"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/space" />
+    <TextView
+        android:id="@+id/column_text_11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_outline"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/space" />
+    <TextView
+        android:id="@+id/column_text_12"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_outline"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/space" />
+    <TextView
+        android:id="@+id/column_text_13"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_outline"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/space" />
+    <TextView
+        android:id="@+id/column_text_14"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_outline"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/space" />
+    <TextView
+        android:id="@+id/column_text_15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:layout_weight="1"

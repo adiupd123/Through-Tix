@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketBookActivity">
+
+    <ImageView
+        android:id="@+id/screen_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/curve_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/screen_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Screen"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screen_imageView"/>
+
+
+    <TextView
+        android:id="@+id/instruction_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="\<Tap to select seats\>"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screen_textView"/>
+
+    <LinearLayout
+        android:id="@+id/seats_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instruction_textView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="A"
+                android:gravity="center"/>
+            <include
+                android:id="@+id/seat_layout_A"
+                layout="@layout/row_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="B"
+                android:gravity="center"/>
+            <include
+                android:id="@+id/seat_layout_B"
+                layout="@layout/row_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="C"
+                android:gravity="center"/>
+            <include
+                android:id="@+id/seat_layout_C"
+                layout="@layout/row_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout><LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="D"
+            android:gravity="center"/>
+        <include
+            android:id="@+id/seat_layout_D"
+            layout="@layout/row_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout><LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="E"
+            android:gravity="center"/>
+        <include
+            android:id="@+id/seat_layout_E"
+            layout="@layout/row_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="F"
+                android:gravity="center"/>
+            <include
+                android:id="@+id/seat_layout_F"
+                layout="@layout/row_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="G"
+                android:gravity="center"/>
+            <include
+                android:id="@+id/seat_layout_G"
+                layout="@layout/row_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="H"
+                android:gravity="center"/>
+            <include
+                android:id="@+id/seat_layout_H"
+                layout="@layout/row_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="I  "
+                android:gravity="center"/>
+            <include
+                android:id="@+id/seat_layout_I"
+                layout="@layout/row_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="J"
+                android:gravity="center"/>
+            <include
+                android:id="@+id/seat_layout_J"
+                layout="@layout/row_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seatsStatus_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seats_linearLayout">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/circular_shape"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/circular_shape"
+            app:tint="@color/yellow"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reserved"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/circular_shape"
+            app:tint="@color/green"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/seatDet_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="24dp"
+        android:background="@drawable/curve_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/seatsSelected_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/chair_solid"
+                app:tint="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seats:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"/>
+            <TextView
+                android:id="@+id/selectedSeats_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A1, A2, A3"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bookDate_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/seatsSelected_ll"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_calendar"
+                app:tint="@color/white"/>
+            <TextView
+                android:id="@+id/evtDate_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22/04/2022"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"/>
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/circular_shape"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                app:tint="@color/white" />
+            <TextView
+                android:id="@+id/evtTime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 PM"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cost_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/bookDate_ll"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:tint="@color/white"
+                android:src="@drawable/wallet_solid"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"/>
+            <TextView
+                android:id="@+id/totalPrice_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150.00"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

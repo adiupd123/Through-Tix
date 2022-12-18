@@ -126,13 +126,16 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/pick_date_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:text="Select Date"
+            android:textColor="@color/black"
+            app:iconTint="@color/black"
+            app:strokeColor="@color/black"
             android:textAllCaps="false"
-            android:textSize="14sp"
             app:icon="@drawable/ic_calendar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
